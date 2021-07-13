@@ -4,6 +4,12 @@ import Nav from 'react-bootstrap/Nav'
 
 import AuthService from "../services/auth.service";
 
+import { BiLogIn,BiLogOut } from "react-icons/bi";
+
+import {MdPets}  from "react-icons/md"; 
+
+import { GiDogHouse, GiJumpingDog} from "react-icons/gi";
+
 export default class Menu extends Component {
 
     constructor(props) {
@@ -50,26 +56,26 @@ export default class Menu extends Component {
     }
     getMenuUser() {
         return <Nav className="mr-auto">
-            < Nav.Link href="/profile">Profile</Nav.Link>
+            < Nav.Link href="/profile"><GiJumpingDog/>Profile</Nav.Link>
         </Nav>
     }
 
     getMenu() {
         return <Nav className="mr-auto">
-            <Nav.Link href="about">About us</Nav.Link>
+            <Nav.Link href="about"><GiDogHouse/>About us</Nav.Link>
         </Nav>
 
     }
     render() {
         const { currentUser, showModeratorBoard, showAdminBoard } = this.state;
+
         return (
 
 
-            <Navbar className="center maxSize" bg="light" expand="lg">
-                <Navbar.Brand href="/home">HOME</Navbar.Brand>
+            <Navbar className=" maxSize" fixed="top" expand="lg" style={{ backgroundColor: '#70db70' }}>
+                <Navbar.Brand href="/home"><MdPets/> COLAS FELICES <MdPets/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-
+                <Navbar.Collapse id="basic-navbar-nav" >
 
                     {currentUser ? (
                         < Nav className="mr-auto">
@@ -85,23 +91,28 @@ export default class Menu extends Component {
                                 this.getMenuAdmin()
                             )}
 
-                            <Nav.Link href="logout" onClick={this.logOut} >Logout</Nav.Link>
-
                         </Nav>
-
-
-
                     ) : (
+                            <Nav className="mr-auto">
 
-                            < Nav className="mr-auto">
                                 {this.getMenu()}
-
-                                <Nav.Link href="login" >Login</Nav.Link>
 
                             </Nav>
                         )}
 
+                    {currentUser ? (
+                        <Nav.Link href="logout" onClick={this.logOut} className="ml-auto" >
+                            <BiLogOut/>Logout <b>[{currentUser.username}]</b>
+                        </Nav.Link>
+
+                    ) : (
+                            <Nav className="ml-auto">
+                                <Nav.Link href="login" ><BiLogIn/>Login</Nav.Link>
+                            </Nav>
+                        )}
                 </Navbar.Collapse>
+
+
             </Navbar >
 
         )

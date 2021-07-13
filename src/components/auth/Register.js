@@ -100,8 +100,7 @@ export default class Register extends Component {
             AuthService.register(
                 this.state.username,
                 this.state.email,
-                this.state.password,
-                "user"
+                this.state.password
             ).then(
                 response => {
                     this.setState({
@@ -128,6 +127,7 @@ export default class Register extends Component {
     render() {
         return (
             <div className="center col-md-4">
+                 <h2>REGISTER</h2>
                 <div className="card card-container">
                     {/* <img
                         src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"

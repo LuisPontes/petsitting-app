@@ -1,17 +1,22 @@
 import React, { Component } from 'react'
-import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
+// import Row from 'react-bootstrap/Row';
+
+import "./Footer.css"
 
 export default class Footer extends Component {
   render() {
     return (
-      
-        <Row md={4}>
 
-          <h1 className="center" >Footer</h1>
+      <footer className="fixed-bottom site-footer ">
 
-        </Row>
-     
+
+        <p>
+          Site developed by LuisPontes &copy;{" "}
+          {new Date().getFullYear().toString()}{" "}
+        </p>
+
+      </footer>
+
     )
   }
 }

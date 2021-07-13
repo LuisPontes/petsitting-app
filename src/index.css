@@ -9,6 +9,10 @@ body {
   height: 100%;
 }
 
+body { padding-top: 45px; }
+/* @media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+} */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -17,7 +21,8 @@ code {
 .center {
   margin:auto;
   text-align: center;
-
+  margin-top:1%;
+  margin-bottom:1%;
 }
 
 .maxSize{

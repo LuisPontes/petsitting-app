@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3001/api/auth/";
+const API_URL = "http://192.168.0.10:3001/api/auth/pet/";
 
 class AuthService {
   login(username, password) {
@@ -21,20 +21,20 @@ class AuthService {
 
   logout() {
     localStorage.removeItem("user");
+    window.location.href = '/home';
   }
 
-  register(username, email, password,role) {
+  register(username, email, password) {
     console.log(API_URL + "signup");
     return axios.post(API_URL + "signup", {
       username,
       email,
-      password,
-      role
+      password
     });
   }
 
   getCurrentUser() {
-    return JSON.parse(localStorage.getItem('user'));;
+    return JSON.parse(localStorage.getItem('user'));
   }
 }
 

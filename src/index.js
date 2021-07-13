@@ -14,8 +14,8 @@ import Footer from './layout/Footer'
 
 
 ReactDOM.render(
-  <React.StrictMode>
-
+  // <React.StrictMode>
+<React.Fragment>
     <Container>
 
       <Header />
@@ -29,6 +29,7 @@ ReactDOM.render(
     </Container>
 
 
-  </React.StrictMode>,
+ 
+  </React.Fragment>,
   document.getElementById('root')
 );

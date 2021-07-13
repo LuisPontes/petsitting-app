@@ -90,15 +90,18 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div className="center col-md-4">
+      <div className="center col-md-4" >
+        <h2>LOGIN</h2>
         <div className="card card-container">
 
+          
           <Form
             onSubmit={this.handleLogin}
             ref={c => {
               this.form = c;
             }}
           >
+
             <div className="form-group">
               <label htmlFor="username">Username</label>
               <Input

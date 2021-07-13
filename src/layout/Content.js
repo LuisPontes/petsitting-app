@@ -11,7 +11,7 @@ import Home from '../components/home/Home';
 import Login from '../components/auth/Login';
 import About from '../components/about/About';
 import Register from '../components/auth/Register';
-import Profile from '../components/profile/Profile';
+import Profile from '../components/auth/user/Profile';
 import BoardModerator from "../components/auth/moderator/ModeratorBoard";
 import BoardAdmin from "../components/auth/admin/AdminBoard";
 
@@ -47,7 +47,7 @@ export default class Content extends Component {
   render() {
     const { currentUser } = this.state;
     return (
-      <Row md={4}>
+      <Row md={4} style={{top:'200px'}}>
 
         <Router>
 
@@ -63,7 +63,7 @@ export default class Content extends Component {
           ) : (
 
               <Switch>
-                <Route exact path={["/", "/home"]} component={Home} />
+                <Route exact path={["/", "/home","/logout"]} component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/register" component={Register} />
