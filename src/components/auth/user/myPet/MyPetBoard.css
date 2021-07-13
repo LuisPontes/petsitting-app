@@ -1,0 +1,4 @@
+.container-myPets {
+    flex-wrap: wrap;
+    flex-direction: row ;
+  }
