@@ -7,9 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Col from 'react-bootstrap/Col';
 
 //components
-import Header from './layout/Header'
-import Content from './layout/Content'
-import Footer from './layout/Footer'
+import Header from './components/layout/Header'
+import Content from './components/layout/Content'
+import Footer from './components/layout/Footer'
 
 
 

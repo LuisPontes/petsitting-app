@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API_URL = "http://192.168.0.10:3001/api/auth/pet/";
+// const API_URL = "http://192.168.0.10:3001/api/auth/pet/";
+const API_URL = "http://localhost:3001/api/auth/pet/";
+
 
 class AuthService {
   login(username, password) {

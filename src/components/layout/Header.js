@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import Menu from '../components/Menu';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
+import Menu from './Menu';
 
 export default class Header extends Component {
   render() {

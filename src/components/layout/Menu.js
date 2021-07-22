@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
-import AuthService from "../services/auth.service";
+import AuthService from "../../services/auth.service";
 
 import { BiLogIn,BiLogOut } from "react-icons/bi";
 

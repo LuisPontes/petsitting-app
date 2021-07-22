@@ -7,16 +7,16 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 //Components Pages
-import Home from '../components/home/Home';
-import Login from '../components/auth/Login';
-import About from '../components/about/About';
-import Register from '../components/auth/Register';
-import Profile from '../components/auth/user/Profile';
-import BoardModerator from "../components/auth/moderator/ModeratorBoard";
-import BoardAdmin from "../components/auth/admin/AdminBoard";
+import Home from './home/Home';
+import Login from '../auth/Login';
+import About from './about/About';
+import Register from '../auth/Register';
+import Profile from '../auth/user/Profile';
+import BoardModerator from "../auth/moderator/ModeratorBoard";
+import BoardAdmin from "../auth/admin/AdminBoard";
 
 
-import AuthService from "../services/auth.service";
+import AuthService from "../../services/auth.service";
 
 export default class Content extends Component {
 

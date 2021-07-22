@@ -135,10 +135,14 @@ export default class SchedulerBasic extends Component {
                     this.setState({
                         allReserves: response.data
                     });
+                    let schedulerData = this.state.viewModel;
+                    schedulerData.setEvents([]);
+                    this.setState({
+                        viewModel: schedulerData
+                    })
                     this.state.allReserves.rows.map((event)=>{
                         if(event !== undefined )
                         this.addEvent(event)
-                        
                     });
             
 
@@ -318,16 +322,16 @@ export default class SchedulerBasic extends Component {
         if (window.confirm(`Do you want to remove this event? {slotId: ${event.title},start: ${event.start}, end: ${event.end}, type: ${event.type}, item: ${event.item}}`)) {
             ApiUserService.deleteReserve(event.id).then(
                 response => {
-                    console.log("response.data ", response.data)
+                    // console.log("response.data ", response.data)
                     this.props.saveMyReserves(response.data);
                     this.setState({
                         allReserves: response.data
                     });
-                    // this.removeEventById(event.id);
-                    // this.state.allReserves.rows.map((event)=>{
-                    //     if(event !== undefined )
-                    //     this.addEvent(event)
-                    // });
+                    this.removeEvent(event);
+                    this.state.allReserves.rows.map((event)=>{
+                        if(event !== undefined )
+                        this.addEvent(event)
+                    });
                 },
                 error => {
                     if (error.response) {
@@ -359,11 +363,15 @@ export default class SchedulerBasic extends Component {
     };
 
     removeEvent(event) {
-        let index = this.events.indexOf(event);
+        let schedulerData = this.state.viewModel;
+        let index = schedulerData.events.indexOf(event);
         if(index !== -1) {
-            this.events.splice(index, 1);
-            this._createRenderData();
+            schedulerData.events.splice(index, 1);
+            schedulerData._createRenderData();
         }
+        this.setState({
+            viewModel: schedulerData
+        })
     }
 
     removeEventById(eventId) {
