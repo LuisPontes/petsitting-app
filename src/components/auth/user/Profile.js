@@ -13,8 +13,6 @@ import { AiOutlineSchedule, AiOutlineHistory } from "react-icons/ai";
 import { RiAccountCircleFill } from "react-icons/ri";
 import { GiJumpingDog } from "react-icons/gi";
 
-// import AuthService from "../../../services/auth.service";
-// import ApiUserService from "../../../services/api.user";
 
 
 export default class Profile extends Component {

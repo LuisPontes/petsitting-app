@@ -51,6 +51,7 @@ export default class Menu extends Component {
     }
     getMenuAdmin() {
         return <Nav className="mr-auto">
+             <Nav.Link href="mod"  >Petsiter</Nav.Link>
             <Nav.Link href="admin"  >Administrater</Nav.Link>
         </Nav >
     }
@@ -81,15 +82,23 @@ export default class Menu extends Component {
                         < Nav className="mr-auto">
                             {this.getMenu()}
                             {this.getMenuUser()}
-                            {showModeratorBoard && (
+
+                            {
+                                showAdminBoard ?
+                                this.getMenuAdmin()
+                                :showModeratorBoard?
+                                this.getMenuMod()
+                                :null
+                            }
+                            {/* {showModeratorBoard && (
                                 this.getMenuMod()
                             )}
                             {showAdminBoard && (
                                 this.getMenuMod()
-                            )}
+                            )} 
                             {showAdminBoard && (
                                 this.getMenuAdmin()
-                            )}
+                            )} */}
 
                         </Nav>
                     ) : (
