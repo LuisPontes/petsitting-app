@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/colasFelices/static/css/main.519a08f6.chunk.css",
+    "main.js": "/colasFelices/static/js/main.2e04c4c7.chunk.js",
+    "main.js.map": "/colasFelices/static/js/main.2e04c4c7.chunk.js.map",
+    "runtime-main.js": "/colasFelices/static/js/runtime-main.c8a62b20.js",
+    "runtime-main.js.map": "/colasFelices/static/js/runtime-main.c8a62b20.js.map",
+    "static/css/2.65588c0d.chunk.css": "/colasFelices/static/css/2.65588c0d.chunk.css",
+    "static/js/2.5d86476a.chunk.js": "/colasFelices/static/js/2.5d86476a.chunk.js",
+    "static/js/2.5d86476a.chunk.js.map": "/colasFelices/static/js/2.5d86476a.chunk.js.map",
+    "index.html": "/colasFelices/index.html",
+    "static/css/2.65588c0d.chunk.css.map": "/colasFelices/static/css/2.65588c0d.chunk.css.map",
+    "static/css/main.519a08f6.chunk.css.map": "/colasFelices/static/css/main.519a08f6.chunk.css.map",
+    "static/js/2.5d86476a.chunk.js.LICENSE.txt": "/colasFelices/static/js/2.5d86476a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8a62b20.js",
+    "static/css/2.65588c0d.chunk.css",
+    "static/js/2.5d86476a.chunk.js",
+    "static/css/main.519a08f6.chunk.css",
+    "static/js/main.2e04c4c7.chunk.js"
+  ]
+}
