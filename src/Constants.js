@@ -27,15 +27,20 @@ export const PaymentStatus = {
 }
 
 // export const API_URL_AUTH = "http://192.168.0.10:3001/api/auth/pet/";
-export const API_URL_AUTH = "http://localhost:3001/api/auth/pet/";
+// export const API_URL_AUTH = "http://localhost:3001/api/auth/pet/";
+ export const API_URL_AUTH = "https://app-5db88e86-f74e-4442-a7c7-f1e5288bd3e2.cleverapps.io/api/auth/pet/";
+
 
 // export const API_URL_USER = "http://192.168.0.10:3001/api/pet/";
-export const API_URL_USER = "http://localhost:3001/api/pet/";
+// export const API_URL_USER = "http://localhost:3001/api/pet/";
+ export const API_URL_USER = "https://app-5db88e86-f74e-4442-a7c7-f1e5288bd3e2.cleverapps.io/api/pet/";
 
 
 // export const API_URL_ADMIN = "http://192.168.0.10:3001/api/admin/";
-export const API_URL_ADMIN = "http://localhost:3001/api/admin/";
+// export const API_URL_ADMIN = "http://localhost:3001/api/admin/";
+ export const API_URL_ADMIN = "https://app-5db88e86-f74e-4442-a7c7-f1e5288bd3e2.cleverapps.io/api/admin/";
 
 
 // export const API_URL_PETSITER = "http://192.168.0.10:3001/api/mod/";
-export const API_URL_PETSITER = "http://localhost:3001/api/mod/";
+// export const API_URL_PETSITER = "http://localhost:3001/api/mod/";
+ export const API_URL_PETSITER = "https://app-5db88e86-f74e-4442-a7c7-f1e5288bd3e2.cleverapps.io/api/mod/";

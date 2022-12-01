@@ -6,7 +6,7 @@ export default class Home extends Component {
     render() {
         return (
             <div className="center maxSize"  >
-                <h1>HOME</h1>
+                <h1>HOME home</h1>
                 <TaxTableInfo/>
             </div>
 
